@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Caro game Simple</h3>
+<p id="caro game"></p>
+<input type="button" value="change value" onclick="changevalue()">
+<script>
+    let b = document.getElementById("caro game");
+    let arr_1 =[]
+    let arr_2 ="";
+    let arr_1 = new Array(10)
+    for (let i=0;i<10;i++){
+        arr_1 = new Array("0","0","0","0","0","0","0","0","0","0")
+    }
+    for (let i =0;i<10;i++){
+        arr_2 += "<br/>";
+        for (let j=0;j<10;j++){
+            arr_2 += arr_1[i][j]+"&nbsp;&nbsp;&nbsp;&nbsp;";
+        }
+    }
+    arr_2 +="<br/><br/><input type='button' value='Change Value' onclick='changeValue()'>"
+    b.innerHTML = arr_2
+</script>
+</body>
+</html>
